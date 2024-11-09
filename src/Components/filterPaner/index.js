@@ -1,10 +1,10 @@
 import React from 'react';
-import { Select, Space, Form, Input, Row, Col } from 'antd';
+import { Select, Space, Form, Input } from 'antd';
 import './index.css';
 
 const FilterPanel = ({ filters, setFilters , setLoading }) => {
   const handleCategoryChange = (value) => { 
-    const timerId = setTimeout(()=> setLoading(true));
+    setTimeout(()=> setLoading(true));
     setFilters({ ...filters, category: value })
     setTimeout(()=> setLoading(false),1000);
   };
