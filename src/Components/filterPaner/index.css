@@ -1,0 +1,101 @@
+
+.filter-panel {
+    padding: 15px 0 80px 0;
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1050px;
+    margin: 40px auto;
+  }
+
+  .filter-panel h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #263b8e;;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+
+  .main-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    color: #263b8e;
+  }
+
+  .filter-label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #263b8e;
+    
+  }
+  
+  .ant-form-item-label > label[for="MinPrice"] {
+    color: #263b8e;
+    font-size: 18px;
+   
+  }
+
+  .ant-form-item-label > label[for="MaxPrice"] {
+    color: #263b8e;
+    font-size: 18px;
+
+  }
+
+  .ant-form-item-label > label[for="Rating"] {
+    color: #263b8e;
+    font-size: 18px;
+
+  }
+
+
+  .filter-select {
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-select:hover {
+    border-color: #40a9ff;
+  }
+  
+ 
+
+
+
+  @media (max-width: 768px) {
+    .ant-space {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filter-panel {
+      padding: 20px;
+    }
+  
+    .filter-form-item {
+      width: 100%;
+    }
+  
+    .filter-select {
+      max-width: 100%;
+    }
+  }
+  
+
+  .filter-panel .ant-btn {
+    background-color: #1890ff;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-panel .ant-btn:hover {
+    background-color: #40a9ff;
+    color: white;
+  }
+  
