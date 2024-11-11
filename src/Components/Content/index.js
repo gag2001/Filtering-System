@@ -17,12 +17,14 @@ const ProductsList = ({mockData}) => {
     
 
       useEffect(() => {
-          setTimeout(() => {
-          setProducts(mockData); 
-          setFilteredProducts(mockData); 
-          setLoading(false);
-        }, 1000); 
-      });
+          
+        if (mockData.length > 0) {
+          setProducts(mockData);  
+          setFilteredProducts(mockData);  
+          setLoading(false);  
+        }
+       
+      },[mockData]);
     
       useEffect(() => {
         let updatedProducts = products;
@@ -60,7 +62,7 @@ const ProductsList = ({mockData}) => {
       return (
         <div>
           
-          <FilterPanel filters={filters} setFilters={setFilters} setLoading = {setLoading} />
+          <FilterPanel filters={filters} setFilters={setFilters} setLoading = {setLoading}/>
           <div className="product-card">
             { loading ? <div className="spin"><Spin size="large"/></div> : (
               filteredProducts.map((product) => (
