@@ -9,7 +9,7 @@ const FilterPanel = ({ filters, setFilters , setLoading }) => {
     setTimeout(()=> setLoading(false),1000);
   };
   const handleBrandChange = (value) => {
-    const timerId = setTimeout(()=> setLoading(true));
+    setTimeout(()=> setLoading(true));
     setFilters({ ...filters, brand: value });
     setTimeout(()=> setLoading(false),1000);
 };

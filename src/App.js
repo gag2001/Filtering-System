@@ -1,4 +1,3 @@
-import { useState,useEffect } from "react";
 import ProductsList from "./Components/Content";
 import mockData from "./Backend-Side/ProductsData";
 

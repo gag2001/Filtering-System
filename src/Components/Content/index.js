@@ -22,7 +22,7 @@ const ProductsList = ({mockData}) => {
           setFilteredProducts(mockData); 
           setLoading(false);
         }, 1000); 
-      }, []);
+      });
     
       useEffect(() => {
         let updatedProducts = products;
